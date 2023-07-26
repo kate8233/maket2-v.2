@@ -42,7 +42,6 @@ img {	vertical-align: top;}
 img { display: block;}
 
 /*----------------general properties----------------*/
-
 body {
 	font-family: 'Courier';
 	font-size: 16px;
@@ -105,9 +104,6 @@ header {
 	background: #FFFFFF;
 	border: 1px solid #D4E3DB;
 	border-radius: 40px;
-}
-
-nav {
 	display: flex;
 	justify-content: space-between;
 	position: relative;
@@ -124,8 +120,12 @@ nav {
 }
 .header__logo {
 	position: absolute;
-	left: 45%;
-	top: 0;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	height: auto;
+	align-items: center;
 }
 
 .menu__header-icons {
@@ -141,8 +141,9 @@ nav {
 
 /*------banner----*/
 
-.banner__wrapper {
+.banner {
 	display: flex;
+	min-height: 67vw;
 }
 
 .banner__text-bg {
@@ -150,10 +151,10 @@ nav {
 	align-items: flex-end;
 	display: flex;
 	width: 50%;
+	padding: 85px 110px 85px 85px;
 }
 
 .banner__text {
-	margin: auto 113px 82.5px 87px;
 }
 
 .banner__text p {
@@ -171,7 +172,6 @@ nav {
 }
 
 /*------------------new product--------------------------*/
-
 .new-product__body {
 	background: url('../img/backgroud-big.jpg') 0 0 / cover no-repeat;
 	position: relative !important;
@@ -299,7 +299,6 @@ nav {
 margin-top: auto;
 }
 /*----------------------faq--------------------*/
-
 .faq {
 	background-color: #4A9390;
 	color: #FFFFFF;
@@ -329,7 +328,6 @@ margin-top: auto;
 	margin: 0 75px 70px;
 }
 /*------------------------benefits---------------------*/
-
 .benefits {
 	background: url('../img/benefits-bg.jpg') 0 0/cover no-repeat;
 	width: 100%;
@@ -366,9 +364,8 @@ margin-top: auto;
 .benefits__content-text {
 	flex: 1 1 auto;
 	width: 100%;
-	position: absolute;
-	top:28%;
-	margin: 0 auto;
+	position: relative;
+	margin-top: 225px;
 }
 
 .benefits__content-text p {
@@ -382,19 +379,17 @@ margin-top: auto;
 .benefits__content-text p:before {
 	content: "";
 	position: absolute;
-	top:50%;
-	left: 50%;
+	top:20px;
+	right: calc(15% + 31px);
 	height: 3px;
 	width: 25%;
 	background-color: #F0F55D;
-	margin-left:23.5px;
-	margin-top: -1.5px;
 }
 
 .benefits__content-text p:after {
 	content: "";
 	position: absolute;
-	top: 50%;
+	top: 20px;
 	right:15%;
 	height: 11px;
 	width: 11px;
@@ -411,7 +406,6 @@ margin-top: auto;
 
 
 /*------------------------slogan-----------------------------*/
-
 .slogan {
 	background-color: #4A9390;
 	color: #FFFFFF;
@@ -427,20 +421,10 @@ margin-top: auto;
 
 .slogan__body p {
 	display: inline-block;
-	white-space: nowrap;
-	animation: marquee 20s linear infinite;
-}
-@keyframes marquee {
-	0% {
-		transform: translateX(0);
-	}
 
-	100% {
-		transform: translateX(-0%);
-	}
 }
+
 /*-----------------------ingredients-----------------------*/
-
 .ingredients {
 	background: #D4E3DB;
 	padding: 59px 71px 61px 48px;
@@ -450,12 +434,12 @@ margin-top: auto;
 	color: #075754;
 	display: flex;
 	flex-direction: column;
+	padding-top: 160px;
+	position:relative;
 }
 
 .ingredients__bg {
-	position:relative;	
-	height: 80vw; 
-	padding-bottom: 100%;
+	height: 41vw; 
 }
 
 .ingredients__body p {
@@ -467,14 +451,27 @@ margin-top: auto;
 	transform: rotate(-90deg) translate(-45%, -400%);
 }
 
-.ingredients__bg img {
+.ingredients__bg-img {
+	position:relative;	
+	width: 100%;
+	height: 100%;
+	max-width: 650px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px;
+}
+
+.ingredients__bg-img img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	max-width: 100%;
-	height: auto;
+	height: 100%;
 }
+
 .ingredients-1 {
 	z-index:2;
 }
@@ -499,9 +496,7 @@ margin-top: auto;
 }
 
 .ingredients__content-text {
-	position: absolute;
-	bottom: 0;
-	right: 0;
+	margin-top:30px;
 	text-align: right;
 	font-size: 20px;
 	line-height: 281.25%;
@@ -509,7 +504,6 @@ margin-top: auto;
 }
 
 /*----------------------follow--------------------*/
-
 .follow {
 	overflow:hidden;
 }
@@ -574,7 +568,6 @@ margin-top: auto;
 }
 
 /*------------------------------------FOOTER-----------------------------*/
-
 footer {}
 
 .footer__body {
@@ -683,16 +676,12 @@ footer {}
 
 
 /*------------------------------------MEDIA------------------------------*/
-
 @media screen and (max-width: 1200px){
 	h1 {
 		font-size:5vw;
 		line-height: 50px;
 	}
-	.banner__text {
-		margin-left: 60px;
-	}
-	
+
 	.footer__header svg {
 		height: 182px;
 		width: auto;
@@ -710,10 +699,9 @@ footer {}
 		padding: 12px 20px;
 	}
 
-	.banner__text {
-		margin: auto 35px 50px 40px;
+	.banner__text-bg {
+		padding:85px 70px 55px 55px;
 	}
-	
 	.banner__text p {
 		margin: 25px 0;
 	}
@@ -735,6 +723,10 @@ footer {}
 		flex: 0 1 calc(50% - calc(30px/2));
 	}
 
+	.ingredients__body {
+		padding-top: 110px;
+	}
+	
 	.ingredients__body p {
 		font-size: 18px;
 	}
@@ -742,21 +734,6 @@ footer {}
 	.ingredients__content-text {
 		font-size: 14px;
 		line-height: 196.25%;
-	}
-
-	.ingredients-1 {
-		width: 31%;
-		height: auto;
-	}
-
-	.ingredients-2 {
-		width: 44%;
-		height: auto;
-	}
-
-	.ingredients-3 {
-		width: 58.5%;
-		height: auto;
 	}
 
 	.footer__body {
@@ -779,17 +756,16 @@ footer {}
 		font-size: 45px;
 		line-height: 47px;
 	}
-	.banner__wrapper{
+
+	.banner {
 		flex-direction: column-reverse;
 	}
 
 	.banner__text-bg , .banner__img{
 		width: 100%;
 	}
-	.banner__text {
-		margin: 37px 35px 50px 22px;		
-	}
-	
+
+		
 	.new-product__body p {
 		font-size: 18px;
 		line-height: 16px;
@@ -848,19 +824,25 @@ footer {}
 		font-size: 120px;
 		line-height: 86.75%;
 	}
-	.benefits__content {
-		margin: 47px 0 130px 0;
+	
+	.benefits__content-text {
+		margin-top:47px;
 	}
-
 	.benefits__content-text p {
 		font-size: 20px;
 	}
 
+	.benefits__content-text p:before {
+		right: calc(10% + 31px);
+	}
+
+	.benefits__content-text p:after {
+		right: 10%
+	}
 	.benefits__content-button {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		justify-content: flex-end;
+		position: relative;
+		text-align: right;
+		margin-top: 85px;
 	}
 
 	.slogan__body {
@@ -871,9 +853,10 @@ footer {}
 		padding: 17px 21px 32px 19px;
 	}
 
-	.ingredients__bg {
-		padding-bottom: 100%;
+	.ingredients__bg-img {
+		padding: 28px;
 	}
+	
 	.ingredients__body a {
 		margin-left: 3px; 
 		font-size: 14px;
