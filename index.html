@@ -12,12 +12,66 @@
 <body>
 	<header>
 		<div class="header__body">
+			<div class="header__menu-burger">
+				<span></span>
+			</div>
 			<ul class="menu__header-list">
-					<li><a href="#">Shop</a></li>
+					<li class="menu__header-submenu"><a href="#">Shop</a>
+						<div class="header__submenu">
+							<h3 class="header__submenu-header">Our Lineup</h3>
+							<div class="header__submenu-items">
+								<div class="header__submenu-item">
+									<div class="header__submenu-img">
+										<img src="img/header-shop1.jpg" alt="">
+									</div>
+									<div class="header__submenu-name">
+										<span>Skin-Strengthening</span>
+										<p>serum</p>
+									</div>
+								</div>
+								<div class="header__submenu-item">
+									<div class="header__submenu-img">
+										<img src="img/header-shop2.jpg" alt="">
+									</div>
+									<div class="header__submenu-name">
+										<span>barrier-building</span>
+										<p>Moisture Cream</p>
+									</div>
+								</div>
+								<div class="header__submenu-item">
+									<div class="header__submenu-img">
+										<img src="img/header-shop3.jpg" alt="">
+									</div>
+									<div class="header__submenu-name">
+										<span>purified</span>
+										<p>whipped cleanser</p>
+									</div>
+								</div>
+								<div class="header__submenu-item">
+									<div class="header__submenu-img">
+										<img src="img/header-shop4.jpg" alt="">
+									</div>
+									<div class="header__submenu-name">
+										<span>Moisture-locking</span>
+										<p>FACE STICK</p>
+									</div>
+								</div>
+						
+							</div>
+							<div class="header__submenu-buttons">
+								<div class="header__submenu-button button">
+									<a href="">SHOP BUNDLE</a>
+								</div>
+								<div class="header__submenu-button header__submenu-button-all button">
+									<a href="">SHOP ALL</a>
+								</div>
+							</div>
+						</div>
+					</li>
 					<li><a href="#">INFLAMMAGING</a></li>
 					<li><a href="#">FORWARD</a></li>
 				</ul>
-				<a href="">
+			<a href="" class="menu__header-logo">
 					<svg width="110" height="25" viewBox="0 0 110 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__logo">
 					<path
 						d="M78.3339 0.615807C76.7785 0.560622 75.2193 0.605775 73.6367 0.605775V24.9687C75.3021 24.9687 76.8921 25.0477 78.4698 24.9549C84.6211 24.5924 89.4653 20.2178 90.0176 14.0935C90.3721 10.1666 89.2466 6.73633 86.3755 3.98586C84.122 1.82862 81.4176 0.724923 78.3339 0.615807ZM84.799 16.7888C83.3486 19.5267 80.8925 20.6705 77.82 20.7583V4.79231C80.4935 4.88136 82.7581 5.79567 84.3011 8.02189C86.226 10.8025 86.3742 13.8163 84.799 16.7888Z"
@@ -36,16 +90,16 @@
 						d="M102.202 4.70507H110V0.692871H102.202C97.8528 0.692871 94.3145 4.28491 94.3145 8.69972V16.8834C94.3145 21.598 97.5575 24.889 102.202 24.889H110V20.8781H102.202C101.279 20.8781 98.2667 20.5883 98.2667 16.8834V14.8541H107.943V10.7278H98.2667V8.69972C98.2667 6.49733 100.032 4.70507 102.202 4.70507Z"
 						fill="#255653" />
 					</svg>
-				</a>
-				<ul class="menu__header-icons">
-					<li><a href="">
+			</a>
+			<ul class="menu__header-icons">
+					<li class="header-icons__logo"><a href="">
 							<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M0.921296 17.9295L0.921291 17.9295C0.860248 17.8707 0.811362 17.8002 0.778182 17.7218C0.745235 17.6439 0.728621 17.5601 0.729624 17.4754M0.921296 17.9295L16.9916 17.6244C17.0113 17.5777 17.0211 17.5277 17.0204 17.4773H17.2704C17.2704 17.4768 17.2704 17.4763 17.2704 17.4757C17.2697 14.0764 15.0006 11.1864 11.841 10.0846C13.284 9.19598 14.2475 7.64809 14.2475 5.88382C14.2475 3.11642 11.882 0.887207 9.001 0.887207C6.11997 0.887207 3.75448 3.11642 3.75448 5.88382C3.75448 7.64805 4.71794 9.19593 6.1609 10.0846C3.00089 11.1862 0.730453 14.0761 0.729624 17.4754M0.921296 17.9295C0.982329 17.9883 1.05436 18.0344 1.13289 18.0656C1.21137 18.0968 1.2952 18.1127 1.37962 18.1127C1.46405 18.1127 1.54788 18.0968 1.62635 18.0656C1.70488 18.0344 1.77692 17.9883 1.83795 17.9295L1.66449 17.7495M0.921296 17.9295L1.66449 17.7495M0.729624 17.4754C0.729631 17.4748 0.729642 17.4742 0.729652 17.4736L0.979624 17.4773H0.729624C0.729624 17.4767 0.729624 17.4761 0.729624 17.4754ZM1.66449 17.7495C1.70171 17.7136 1.73105 17.6711 1.75082 17.6244C1.77058 17.5777 1.78037 17.5277 1.77962 17.4773H2.02962C2.02962 17.4768 2.02962 17.4762 2.02962 17.4757C2.03051 13.9302 4.97086 11.0262 8.69337 10.8735C8.79485 10.8792 8.89737 10.8823 9.001 10.8823C9.10461 10.8823 9.20714 10.8792 9.3086 10.8735C13.031 11.0261 15.9695 13.93 15.9704 17.4757C15.9704 17.4762 15.9704 17.4768 15.9704 17.4773H16.2204L1.66449 17.7495ZM9.001 2.14721C11.1982 2.14721 12.9475 3.82697 12.9475 5.88382C12.9475 7.84866 11.3518 9.47 9.29406 9.61207C9.19704 9.60883 9.09932 9.60704 9.001 9.60704C8.90268 9.60704 8.805 9.60883 8.70798 9.61207C6.6502 9.47002 5.05448 7.84867 5.05448 5.88382C5.05448 3.82697 6.80377 2.14721 9.001 2.14721Z"
 									fill="#075754" stroke="#075754" stroke-width="0.5" />
 							</svg>
 						</a></li>
-					<li><a href="">
+					<li class="header-icons__shop"><a href="">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M7 5.91211C3.82436 5.91211 1.25 8.48648 1.25 11.6621V17.2177C1.25 18.1842 2.0335 18.9677 3 18.9677H17C17.9665 18.9677 18.75 18.1842 18.75 17.2177V11.6621C18.75 8.48647 16.1756 5.91211 13 5.91211H7Z"
@@ -55,9 +109,75 @@
 									stroke="#255653" stroke-width="1.5" />
 							</svg>
 						</a></li>
-				</ul>
-			</div>
-	</header>
+			</ul>
+		</div>
+	
+	<nav>
+		<div class="menu__mobile">
+		<h3 class="menu__mobile-header">Our Lineup</h3>
+		<div class="menu__mobile-items">
+					<div class="menu__mobile-item">
+						<div class="menu__mobile-img">
+							<img src="img/header-shop1.jpg" alt="">
+						</div>
+						<div class="menu__mobile-name">
+							<span>Skin-Strengthening</span>
+							<p>serum</p>
+						</div>
+					</div>
+					<div class="menu__mobile-item">
+						<div class="menu__mobile-img">
+							<img src="img/header-shop2.jpg" alt="">
+						</div>
+						<div class="menu__mobile-name">
+							<span>barrier-building</span>
+							<p>Moisture Cream</p>
+						</div>
+					</div>
+					<div class="menu__mobile-item">
+						<div class="menu__mobile-img">
+							<img src="img/header-shop3.jpg" alt="">
+						</div>
+						<div class="menu__mobile-name">
+							<span>purified</span>
+							<p>whipped cleanser</p>
+						</div>
+					</div>
+					<div class="menu__mobile-item">
+						<div class="menu__mobile-img">
+							<img src="img/header-shop4.jpg" alt="">
+						</div>
+						<div class="menu__mobile-name">
+							<span>Moisture-locking</span>
+							<p>FACE STICK</p>
+						</div>
+					</div>
+			
+		</div>
+		<div class="menu__mobile-button button">
+			<a href="">SHOP BUNDLE</a>
+		</div>
+		<div class="menu__mobile-button menu__mobile-button-all button">
+			<a href="">SHOP ALL</a>
+		</div>
+		<ul class="menu__mobile-list">
+			<li><a href="#">Inflammaging</a></li>
+			<li><a href="#" class="menu__mobile-list-dropdown">Forward<span></span></a>
+				<ul class="menu__mobile-sublist">
+					<li><a href="#">Manifesto</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">Sustainability</a></li>
+				</ul></li>
+			<li><a href="#" class="menu__mobile-user">
+				<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M13.0021 1.99658C9.4203 1.99658 6.50659 4.79818 6.50659 8.24213C6.50659 10.7009 7.99186 12.8333 10.1451 13.8522C5.77809 15.0486 2.57427 18.9175 2.57427 23.4967C2.5733 23.563 2.58603 23.6288 2.61172 23.6902C2.63742 23.7517 2.67556 23.8077 2.72395 23.8549C2.77233 23.902 2.82998 23.9395 2.89356 23.9651C2.95713 23.9907 3.02536 24.0038 3.09427 24.0038C3.16318 24.0038 3.23141 23.9907 3.29498 23.9651C3.35856 23.9395 3.41621 23.902 3.4646 23.8549C3.51298 23.8077 3.55113 23.7517 3.57682 23.6902C3.60252 23.6288 3.61525 23.563 3.61427 23.4967C3.61427 18.6336 7.59885 14.6778 12.6049 14.4782C12.7363 14.4859 12.8687 14.4902 13.0021 14.4902C13.1354 14.4902 13.2678 14.4859 13.3992 14.4782C18.4051 14.6778 22.3872 18.6334 22.3872 23.4967C22.3863 23.563 22.399 23.6288 22.4247 23.6902C22.4504 23.7517 22.4885 23.8077 22.5369 23.8549C22.5853 23.902 22.6429 23.9395 22.7065 23.9651C22.7701 23.9907 22.8383 24.0038 22.9072 24.0038C22.9761 24.0038 23.0444 23.9907 23.1079 23.9651C23.1715 23.9395 23.2292 23.902 23.2776 23.8549C23.3259 23.8077 23.3641 23.7517 23.3898 23.6902C23.4155 23.6288 23.4282 23.563 23.4272 23.4967C23.4272 18.9176 20.2253 15.0486 15.859 13.8522C18.0122 12.8333 19.4975 10.701 19.4975 8.24213C19.4975 4.79818 16.5838 1.99658 13.0021 1.99658ZM13.0021 2.99658C16.022 2.99658 18.4575 5.33837 18.4575 8.24213C18.4575 11.0209 16.2268 13.2871 13.3885 13.477C13.2602 13.4725 13.1314 13.47 13.0021 13.47C12.8727 13.47 12.7439 13.4725 12.6157 13.477C9.77734 13.2871 7.54659 11.0209 7.54659 8.24213C7.54659 5.33837 9.98209 2.99658 13.0021 2.99658Z"
+						fill="#075754" />
+				</svg> My Account</a></li>
+		</ul>
+		</div>
+	</nav>
+</header>
 	<main>
 		<section class="banner">
 			<div class="banner__text-bg">
@@ -197,8 +317,37 @@
 		</section>
 		<section class="slogan">
 			<div class="slogan__body">
-				<span>SUPRISE AND DELIGHT TICKER COPY</span>
-				<span>SUPRISE AND DELIGHT TICKER COPY</span>
+				<div class="slogan__body-item">
+						<span>SUPRISE AND DELIGHT TICKER COPY</span>
+						<span>SUPRISE AND DELIGHT TICKER COPY</span>
+						<span>SUPRISE AND DELIGHT TICKER COPY</span>
+						<span>SUPRISE AND DELIGHT TICKER COPY</span>
+						<span>SUPRISE AND DELIGHT TICKER COPY</span>
+				</div>
+				<div class="slogan__body-item">
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>						
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+				</div>
+				<div class="slogan__body-item">
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+				</div>
+				<div class="slogan__body-item">
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+					<span>SUPRISE AND DELIGHT TICKER COPY</span>
+				</div>
+			
+				
+			
 			</div>
 		</section>	
 		<section class="ingredients">
@@ -371,6 +520,8 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
+
