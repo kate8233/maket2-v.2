@@ -1434,6 +1434,7 @@ footer {}
 
 	.follow__button {
 		padding: 44px 19px 31px 14px;
+		margin: 0;
 
 	}
 	.follow__button h2 {
