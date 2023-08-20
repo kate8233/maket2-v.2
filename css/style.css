@@ -54,6 +54,10 @@ body {
 	margin: 0 auto;
 }
 
+body.lock {
+	overflow: hidden;
+}
+
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Chalet', sans-serif;
 	font-size: inherit;
@@ -98,6 +102,7 @@ header {
 	z-index:1;
 }
 
+
 .header__body {
 	padding: 20px 37px;
 	margin: 0 23px;
@@ -109,6 +114,10 @@ header {
 	justify-content: space-between;
 	position: relative;
 	align-items: center;
+}
+
+header.hidden {
+	display: none;
 }
 
 header.is-active {
@@ -642,16 +651,18 @@ margin-top: auto;
 
 /*----------------------follow--------------------*/
 .follow {
-	overflow:hidden;
+	padding-top: 100px ;
 }
 
-.follow__body {}
+.follow__body {
+	position: relative;
+}
 
 .follow__button {
 	display: flex;
 	justify-content: space-between;
 	gap:10px;
-	padding: 82px 78px 67px 86px;
+	margin: 0 78px 0px 86px;
 }
 
 .follow__button h2 {
@@ -667,16 +678,20 @@ margin-top: auto;
 	line-height: 137.25%;
 }
 
+
+
 .follow__gallery {
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
+	z-index:0;
+	max-height: 550px;
+	position: relative;
 }
 
 .follow__gallery-row {
-	display: grid;
-	grid-template-columns: repeat(4,1fr);
-	column-gap:25px;
-	margin: 0 -25px;
-	overflow: hidden;
+	margin:70px 0 130px 0 ;
 }
 
 .follow__gallery-column {
@@ -691,20 +706,107 @@ margin-top: auto;
 	width: 100%;
 	height: 100%;
 	object-fit:cover;
+	transition: transform 250ms ease;
+}
+.follow__gallery-column img:hover {
+	transform: scale(1.05);
 }
 
-.follow__gallery-button {
-	margin: 42px 81px 52px 81px;
+.follow__gallery-buttons {
+position: relative;
 }
 
-.follow__gallery-button button {
-	display: block;
-	margin: 0 0 0 auto;
+.follow__gallery .swiper-button-prev,
+.follow__gallery .swiper-button-next {
+	position: absolute;
+	top: unset !important;
+	bottom: 50px;;
+	color: #075754;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
 }
 
-.follow__gallery-icon {
-	width: 35px;
-	height: 35px;
+.follow__gallery .swiper-button-prev:after {
+	
+}
+.follow__gallery .swiper-button-next:after {
+	right:0;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+	right: 70px;
+}
+
+.popup {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 999;
+}
+
+.popup-content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #fff;
+   padding: 20px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	width: 450px;
+	max-width: 100%;
+	text-align: center;
+	overflow: hidden;
+	z-index:100;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.popup-image { 
+	padding-bottom:130%;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.popup-image img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.2s easy;
+}
+
+
+.popup-close {
+   position: absolute;
+	top: 0px;
+   right: 10px;
+   font-size: 35px;
+   cursor: pointer;
+}
+
+.popup-nav {
+   display: flex;
+	column-gap:30px;
+   justify-content: center;
+   align-items: center;
+	margin-top: 10px;
+}
+
+.popup-prev,
+.popup-next {
+	font-size: 24px;
+	color: #075754;
+   cursor: pointer;
 }
 
 /*------------------------------------FOOTER-----------------------------*/
